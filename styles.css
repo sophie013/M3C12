@@ -1,0 +1,85 @@
+/* --- Estilos Base y Fondo --- */
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: url('https://static0.srcdn.com/wordpress/wp-content/uploads/2025/05/the-apothecary-diaries-maomao-splashing-water-on-jinshi-in-new-art.jpg?q=70&fit=contain&w=680&h=407&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* IMPORTANTE: Espacio para que el navbar fijo no tape el contenido */
+    padding-top: 100px; 
+}
+
+/* --- Navbar Fijo --- */
+.navbar {
+    background-color: #b2dfdb;
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #80cbc4;
+    
+    position: fixed; /* Lo deja pegado */
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; /* Para que el padding no sume al ancho */
+    z-index: 2000; /* Siempre por encima de todo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #00695c;
+    font-weight: bold;
+}
+
+/* --- Contenedores y Layouts --- */
+.container {
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid #ffb6c1;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.layout-fijo { width: 800px; }
+.layout-fluido { width: 95%; max-width: 1400px; }
+
+/* --- Botón Anime --- */
+.btn-anime {
+    background: #ff0055;
+    color: white;
+    padding: 8px 15px;
+    font-weight: bold;
+    border: 3px solid #000;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #000;
+    transition: 0.1s;
+}
+
+.btn-anime:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px #000;
+}
+
+/* --- Otros Estilos --- */
+.card { background: white; padding: 15px; margin-bottom: 20px; border-radius: 10px; }
+.demo-block { display: block; background: #e1f5fe; padding: 10px; border-left: 5px solid #03a9f4; }
+.demo-inline { display: inline-block; background: #f8bbd0; padding: 5px; border-radius: 5px; }
+.column-fluida { float: left; width: 50%; background: #c8e6c9; height: 100px; }
+.column-fija { float: right; width: 300px; background: #fff9c4; height: 100px; }
+.clearfix { clear: both; }
+.fixed-cat { position: fixed; bottom: 20px; left: 20px; background: #ff80ab; color: white; padding: 10px; border-radius: 50px; z-index: 1000; }
+.footer { text-align: center; padding: 20px; background-color: #b2dfdb; }
+.footer-img { max-width: 300px; border-radius: 15px; }

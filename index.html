@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boticaria Kawaii - Práctica CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🌿 Maomao's Remedies</div>
+        
+        <ul class="nav-links">
+            <li><a href="#">Hierbas</a></li>
+            <li><a href="#">Venenos</a></li>
+            <li><a href="#">Palacio</a></li>
+        </ul>
+
+        <button id="toggleLayout" class="btn-anime">Modo Actual: Fijo 🏛️</button>
+    </nav>
+
+    <main id="main-container" class="container layout-fijo">
+        <header>
+            <h1>Laboratorio de la Boticaria</h1>
+            <p> Explorando modelos de cajas entre pociones y ungüentos.</p>
+        </header>
+
+        <section class="card">
+            <h2>1. Elementos de Bloque y Línea</h2>
+            <p class="demo-block">Soy Maomao, un elemento de bloque. Ocupo todo el ancho del estante.</p>
+            <span class="demo-inline">Soy una pequeña hierba (inline).</span>
+            <span class="demo-inline">Crezco a su lado.</span>
+        </section>
+
+        <section class="card pos-container">
+            <h2>2. Posicionamiento de Objetos</h2>
+            <div class="box relative">Relative (Moviendo el mortero)</div>
+            
+            <div class="parent-relative">
+                Contenedor del Palacio (Relative)
+                <div class="box absolute">Jinshi (Absolute)</div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>3. Layout de Pociones (Floats)</h2>
+            <div class="column-fluida">Columna Fluida (50%)</div>
+            <div class="column-fija">Columna Fija (300px)</div>
+            <div class="clearfix"></div>
+        </section>
+    </main>
+
+    <div class="fixed-cat">🐱 Verificando veneno...</div>
+
+    <footer class="footer">
+        <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2025/05/the-apothecary-diaries-maomao-splashing-water-on-jinshi-in-new-art.jpg?q=70&fit=contain&w=680&h=407&dpr=1" alt="Maomao" class="footer-img">
+        <p>&copy; 2026 - Academia de Boticarios Kibernum</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
