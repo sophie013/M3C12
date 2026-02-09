@@ -76,10 +76,93 @@ body {
 /* --- Otros Estilos --- */
 .card { background: white; padding: 15px; margin-bottom: 20px; border-radius: 10px; }
 .demo-block { display: block; background: #e1f5fe; padding: 10px; border-left: 5px solid #03a9f4; }
-.demo-inline { display: inline-block; background: #f8bbd0; padding: 5px; border-radius: 5px; }
+/* --- Estilos para Elementos de Línea --- */
+
+
+
+/* --- Estilos para Elementos de Línea (Hierbas) --- */
+.demo-inline {
+    display: inline-block; /* Mantiene la línea pero permite volumen */
+    background: #f8bbd0;
+    padding: 8px 15px;      /* Más aire interno */
+    border-radius: 50px;    /* Forma de cápsula/pastilla */
+    border: 2px solid #f06292;
+    margin: 10px 5px;       /* Separación clara entre ellas y el bloque de arriba */
+    font-size: 0.9rem;
+    color: #880e4f;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.demo-inline:hover {
+    transform: translateY(-3px); /* Efecto Maomao examinando la hierba */
+    background: #f48fb1;
+}
+
+/* Ajuste para que el contenedor no los apriete */
+.card { 
+    background: white; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 10px;
+    overflow: hidden; /* Evita que los floats se escapen */
+}
+
+
 .column-fluida { float: left; width: 50%; background: #c8e6c9; height: 100px; }
 .column-fija { float: right; width: 300px; background: #fff9c4; height: 100px; }
 .clearfix { clear: both; }
 .fixed-cat { position: fixed; bottom: 20px; left: 20px; background: #ff80ab; color: white; padding: 10px; border-radius: 50px; z-index: 1000; }
 .footer { text-align: center; padding: 20px; background-color: #b2dfdb; }
 .footer-img { max-width: 300px; border-radius: 15px; }
+/* --- Posicionamiento de Objetos --- */
+
+/* Estilo general para las cajitas de demo */
+.box {
+    padding: 10px;
+    border: 2px solid #000;
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 1. Relative: Se mueve respecto a su posición original */
+.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: #fff176; /* Color mortero */
+}
+
+/* 2. Contenedor Padre para el Absolute */
+.parent-relative {
+    position: relative; 
+    height: 150px;
+    background-color: #e0f2f1;
+    border: 2px dashed #4db6ac;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* 3. Absolute: Se posiciona respecto al padre .parent-relative */
+.absolute {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ce93d8; 
+    width: 120px;
+}
+
+.btn-anime:hover {
+    background: #ff3377;
+    transform: scale(1.05);
+}
+
+
+.box {
+    display: inline-block; 
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+}

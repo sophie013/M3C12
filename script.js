@@ -12,3 +12,5 @@ btn.addEventListener('click', () => {
         btn.innerText = "Modo Actual: Fijo 🏛️";
     }
 });
+
+
